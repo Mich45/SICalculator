@@ -1,0 +1,78 @@
+body{
+    background-image: linear-gradient(#0d89f3, #c4dee9);
+    background-repeat: no-repeat;
+}
+.container{
+    position: center;
+    display: grid;
+    justify-items: center;
+    width: 600px;
+    height:600px;
+    margin-left:350px;
+    border-radius: 10px;
+    box-shadow: 0 0 16px 12px rgba(37, 73, 214, 0.18);
+}
+h1{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+input[placeholder="Enter number"]
+{
+    background: white;
+    border: 2px solid rgb(170, 170, 232);
+    width: 130px;
+    text-align: center;
+    height: 30px;
+    border-radius: 50px;
+    font-size: 15px;
+    color: black;
+
+
+}
+
+label{
+    color: white;
+    margin-top: 10px;
+    font-size: 30px;
+}
+#btn1{
+    font-size: 20px;
+    border: 2px solid rgb(231, 235, 250);
+    border-radius: 50px;
+    width: 130px;
+    color: white;
+    height: 40px;
+    background:rgb(31, 79, 226);
+}
+#btn2{
+    font-size: 20px;
+    border: 2px solid rgb(231, 235, 250);
+    border-radius: 50px;
+    color: white;
+    width: 130px;
+    height: 40px;
+    background:rgb(31, 79, 226);
+}
+
+#si{
+    font-family: sans-serif;
+    font-size:20px ;
+}
+ #btn1:hover{
+     background: white;
+     color: black;
+     outline: none;
+     cursor: pointer;
+ }
+ #btn2:hover{
+    background: white;
+    color: black;
+    outline: none;
+    cursor: pointer;
+}
+::placeholder :focus{
+    transition: width 200px 0.2 ease-in-out ;
+}
+ footer{
+     font-family: sans-serif;
+     color:rgb(143, 40, 40);
+ }

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple Interest Calculator</title>
+    <link rel="stylesheet" href="simpleint.css">
+</head>
+<body>
+    <div class="container">
+    
+    <h1 align="center">Simple Interest Calculator 💵</h1>
+<label> Principal:</label>
+ <input type="text" id="txt1" placeholder="Enter number">
+ <label> Rate:</label>
+ <input type="text" id="txt2" placeholder="Enter number">
+ <label> Time:</label>
+ <input type="text" id="txt3" placeholder="Enter number">
+ <br>
+ <p id="si"> </p>
+ <p> 
+        <input type="button" id="btn1" value="Compute▶" onclick="calculate()">
+    <input type="button" id="btn2" value="Reload" onclick="reloadPage()">
+      <script>
+        function calculate()
+{
+    principal = document.getElementById("txt1").value
+     
+    rate = document.getElementById("txt2").value
+
+    time = document.getElementById("txt3").value
+
+    calc1 = principal*rate*time/100
+
+    document.getElementById("si").innerHTML="SIMPLE INTEREST IS" + " " + calc1
+}
+function reloadPage (){
+location.reload();
+}
+</script>
+    </p>
+<br><footer>Designed and Coded with Love❤ by<b> Michael Hungbo</b> </footer> 
+    </div>
+
+ 
+</body>
+</html>
