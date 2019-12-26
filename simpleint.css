@@ -34,44 +34,35 @@ label{
     margin-top: 10px;
     font-size: 30px;
 }
-#btn1{
-    font-size: 20px;
-    border: 2px solid rgb(231, 235, 250);
-    border-radius: 50px;
-    width: 130px;
-    color: white;
-    height: 40px;
-    background:rgb(31, 79, 226);
-}
+
 #btn2{
     font-size: 20px;
-    border: 2px solid rgb(231, 235, 250);
-    border-radius: 50px;
+    border: 2px #5a58f1;
+    border-radius: 4px;
     color: white;
     width: 130px;
     height: 40px;
     background:rgb(31, 79, 226);
 }
-
+input[type=text] {
+    width: 130px;
+    -webkit-transition: width .35s ease-in-out;
+    transition: width .35s ease-in-out;
+  }
+  input[type=text]:focus {
+    width: 250px;}
 #si{
     font-family: sans-serif;
     font-size:20px ;
 }
- #btn1:hover{
-     background: white;
-     color: black;
-     outline: none;
-     cursor: pointer;
- }
+
  #btn2:hover{
     background: white;
     color: black;
     outline: none;
     cursor: pointer;
 }
-::placeholder :focus{
-    transition: width 200px 0.2 ease-in-out ;
-}
+
  footer{
      font-family: sans-serif;
      color:rgb(143, 40, 40);
