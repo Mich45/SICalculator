@@ -9,45 +9,22 @@
 </head>
 <body>
     <div class="container">
-    
-    <h1 align="center">Simple Interest Calculator 💵</h1>
+    <h1>Simple Interest Calculator 💵</h1>
 
-<label> Principal:</label>
- <input type="text" id="txt1" placeholder="Enter number" oninput="calculate()">
- <label> Rate:</label>
- <input type="text" id="txt2" placeholder="Enter number" oninput="calculate()">
- <label> Time:</label>
- <input type="text" id="txt3" placeholder="Enter number" oninput="calculate()">
+      <label> Principal:</label>
+ <input type="text" id="principal1" placeholder="Enter number">
+      <label> Rate:</label>
+ <input type="text" id="rate1" placeholder="Enter number" >
+      <label> Time:</label>
+ <input type="text" id="time1" placeholder="Enter number" >
  <br>
  <p id="si"> </p>
- <p> 
-        
-    <input type="button" id="btn2" value="Reload" onclick="reloadPage()">
-      <script>
-        function calculate()
-{
-    principal = document.getElementById("txt1").value
-     
-    rate = document.getElementById("txt2").value
-
-    time = document.getElementById("txt3").value
-
-    calc1 = Math.round(principal*rate*time/100)
-    
-    document.getElementById("si").innerHTML="SIMPLE INTEREST IS" + " " + calc1
-}
-
-function reloadPage(){
-   document.getElementById("txt1").value=''
-   document.getElementById("txt2").value=''
-   document.getElementById("txt3").value=''
-   document.getElementById("si").innerHTML='';
-} 
-</script>
+ <p>       
+    <input type="button" id="btn" value="Reload"> 
     </p>
-<br><footer>Designed and Coded with Love❤ by<b> Michael Hungbo</b> </footer> 
+<hr>
+<footer><b> © Michael Hungbo</b> </footer> 
     </div>
-
- 
+    <script type="text/javascript" src ="simple.js"> </script>
 </body>
 </html>
